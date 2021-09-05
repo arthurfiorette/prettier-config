@@ -5,14 +5,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArthurFiorette/prettier.git"
+    "url": "git+https://github.com/ArthurFiorette/prettier-config.git"
   },
   "author": "Hazork",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ArthurFiorette/prettier/issues"
+    "url": "https://github.com/ArthurFiorette/prettier-config/issues"
   },
-  "homepage": "https://github.com/ArthurFiorette/prettier#readme",
+  "homepage": "https://github.com/ArthurFiorette/prettier-config#readme",
   "scripts": {
     "auto-version": "npm-auto-version"
   },
