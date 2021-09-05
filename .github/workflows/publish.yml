@@ -2,8 +2,11 @@ name: Publish to NPM
 
 on:
   push:
+    paths:
+      - 'index.js'
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   publish:

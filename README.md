@@ -1,6 +1,16 @@
 ## @arthurfiorette/prettier-config
 
-<br />
+### Usage
+
+First, install
+
+```sh
+# Npm
+npm i -D @arthurfiorette/prettier-config
+
+# Yarn
+yarn add -D @arthurfiorette/prettier-config
+```
 
 You can use this prettier config with a `.prettierrc.json` file.
 
