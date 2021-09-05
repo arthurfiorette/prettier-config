@@ -13,6 +13,9 @@
     "url": "https://github.com/ArthurFiorette/prettier/issues"
   },
   "homepage": "https://github.com/ArthurFiorette/prettier#readme",
+  "scripts": {
+    "auto-version": "npm-auto-version"
+  },
   "devDependencies": {
     "npm-auto-version": "^1.0.0"
   }
