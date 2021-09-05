@@ -44,12 +44,17 @@ const defaultConfig = {
   useTabs: false
 };
 
-module.exports = defaultConfig;
-
 /**
+ * Returns the prettier config with the given overridden options.
+ * 
  * @param {Partial<PrettierOptions>} override
  * @returns {PrettierOptions}
+ * 
+ * @see {defaultConfig}
  */
-module.exports.config = (override = {}) => {
+module.exports = function (override = {}) {
   return { ...defaultConfig, ...override };
 };
+
+module.exports.defaultConfig = defaultConfig;
+

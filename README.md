@@ -12,23 +12,13 @@ npm i -D @arthurfiorette/prettier-config
 yarn add -D @arthurfiorette/prettier-config
 ```
 
-You can use this prettier config with a `.prettierrc.js` file.
+You can just copy what is below in a `.prettierrc.js` file:
 
 ```js
-// .prettierrc.js
+// https://github.com/ArthurFiorette/prettier-config
 
-module.exports = require('@arthurfiorette/prettier-config');
-```
-
-Or overriding some configs
-
-```js
-// .prettierrc.js
-
-const { config } = require('@arthurfiorette/prettier-config');
-
-module.exports = config({
-  printWidth: 80
+module.exports = require('@arthurfiorette/prettier-config')({
+  // Any options here will override @arthurfiorette/prettier-config defaults
 });
 ```
 
