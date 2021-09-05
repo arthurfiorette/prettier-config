@@ -12,10 +12,10 @@ npm i -D @arthurfiorette/prettier-config
 yarn add -D @arthurfiorette/prettier-config
 ```
 
-You can use this prettier config with a `.prettierrc.json` file.
+You can use this prettier config with a `.prettierrc.js` file.
 
 ```js
-// .prettierrc.json
+// .prettierrc.js
 
 module.exports = require('@arthurfiorette/prettier-config');
 ```
@@ -23,7 +23,7 @@ module.exports = require('@arthurfiorette/prettier-config');
 Or overriding some configs
 
 ```js
-// .prettierrc.json
+// .prettierrc.js
 
 const { config } = require('@arthurfiorette/prettier-config');
 
