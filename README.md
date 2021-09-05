@@ -27,7 +27,7 @@ Or overriding some configs
 
 const { config } = require('@arthurfiorette/prettier-config');
 
-module.expors = config({
+module.exports = config({
   printWidth: 80
 });
 ```

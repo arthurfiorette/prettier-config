@@ -51,5 +51,5 @@ module.exports = defaultConfig;
  * @returns {PrettierOptions}
  */
 module.exports.config = (override = {}) => {
-  return { ...defaultConfig, override };
+  return { ...defaultConfig, ...override };
 };
