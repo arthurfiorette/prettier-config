@@ -1,0 +1,22 @@
+{
+  "name": "@arthurfiorette/prettier-config",
+  "version": "1.0.0",
+  "description": "My personal prettier config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurFiorette/prettier.git"
+  },
+  "author": "Hazork",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArthurFiorette/prettier/issues"
+  },
+  "homepage": "https://github.com/ArthurFiorette/prettier#readme",
+  "scripts": {
+    "prepublish": "npm-auto-version"
+  },
+  "devDependencies": {
+    "npm-auto-version": "^1.0.0"
+  }
+}
