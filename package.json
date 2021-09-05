@@ -1,6 +1,6 @@
 {
   "name": "@arthurfiorette/prettier-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My personal prettier config",
   "main": "index.js",
   "repository": {
@@ -13,9 +13,6 @@
     "url": "https://github.com/ArthurFiorette/prettier/issues"
   },
   "homepage": "https://github.com/ArthurFiorette/prettier#readme",
-  "scripts": {
-    "prepublish": "npm-auto-version"
-  },
   "devDependencies": {
     "npm-auto-version": "^1.0.0"
   }

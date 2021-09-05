@@ -24,13 +24,15 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
-      - name: Prepare git user
+      - name: Install dependencies
+        run: npm install
+
+      - name: Prepare git and update version
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      - name: Install dependencies
-        run: npm install
+          npm run npm-auto-version
+          git commit -m "tags: updated tags" -a
 
       - name: Publish to NPM
         run: npm publish --access public
