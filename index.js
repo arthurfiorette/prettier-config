@@ -22,6 +22,10 @@
  *   quoteProps: 'as-needed' | 'consistent' | 'preserve';
  *   vueIndentScriptAndStyle: boolean;
  *   embeddedLanguageFormatting: 'auto' | 'off';
+ *   printWidth: number;
+ *   tabWidth: number;
+ *   useTabs: boolean;
+ *   parentParser?: string | undefined;
  * }} PrettierOptions
  */
 
@@ -31,9 +35,9 @@ const defaultConfig = {
   bracketSpacing: true,
   endOfLine: 'lf',
   insertPragma: false,
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   jsxSingleQuote: false,
-  printWidth: 100,
+  printWidth: 90,
   proseWrap: 'always',
   quoteProps: 'as-needed',
   requirePragma: false,
