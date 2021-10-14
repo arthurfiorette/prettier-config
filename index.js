@@ -1,35 +1,4 @@
-/**
- * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/prettier/index.d.ts
- *
- * @typedef {{
- *   semi: boolean;
- *   singleQuote: boolean;
- *   jsxSingleQuote: boolean;
- *   trailingComma: 'none' | 'es5' | 'all';
- *   bracketSpacing: boolean;
- *   jsxBracketSameLine: boolean;
- *   rangeStart: number;
- *   rangeEnd: number;
- *   parser: LiteralUnion<BuiltInParserName> | CustomParser;
- *   filepath: string;
- *   requirePragma: boolean;
- *   insertPragma: boolean;
- *   proseWrap: 'always' | 'never' | 'preserve';
- *   arrowParens: 'avoid' | 'always';
- *   plugins: (string | Plugin)[];
- *   htmlWhitespaceSensitivity: 'css' | 'strict' | 'ignore';
- *   endOfLine: 'auto' | 'lf' | 'crlf' | 'cr';
- *   quoteProps: 'as-needed' | 'consistent' | 'preserve';
- *   vueIndentScriptAndStyle: boolean;
- *   embeddedLanguageFormatting: 'auto' | 'off';
- *   printWidth: number;
- *   tabWidth: number;
- *   useTabs: boolean;
- *   parentParser?: string | undefined;
- * }} PrettierOptions
- */
-
-/** @type {PrettierOptions} */
+/** @type {import('prettier').Options} */
 const defaultConfig = {
   arrowParens: 'always',
   bracketSpacing: true,
@@ -51,8 +20,8 @@ const defaultConfig = {
 /**
  * Returns the prettier config with the given overridden options.
  * 
- * @param {Partial<PrettierOptions>} override
- * @returns {PrettierOptions}
+ * @param {Partial<import('prettier').Options>} override
+ * @returns {import('prettier').Options}
  * 
  * @see {defaultConfig}
  */

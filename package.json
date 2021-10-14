@@ -16,6 +16,9 @@
   "scripts": {
     "auto-version": "npm-auto-version"
   },
+  "dependencies": {
+    "@types/prettier": "*"
+  },
   "devDependencies": {
     "npm-auto-version": "^1.0.0"
   }
