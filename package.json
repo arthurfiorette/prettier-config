@@ -2,24 +2,27 @@
   "name": "@arthurfiorette/prettier-config",
   "version": "1.0.7",
   "description": "My personal prettier config",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArthurFiorette/prettier-config.git"
-  },
-  "author": "Hazork",
+  "homepage": "https://github.com/arthurfiorette/prettier-config#readme",
+  "bugs": "https://github.com/arthurfiorette/prettier-config/issues",
+  "repository": "https://github.com/arthurfiorette/prettier-config.git",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ArthurFiorette/prettier-config/issues"
+  "author": "Hazork",
+  "main": "index.js",
+  "bin": {
+    "setup-aff-prettier": "./bin.js"
   },
-  "homepage": "https://github.com/ArthurFiorette/prettier-config#readme",
   "scripts": {
     "auto-version": "npm-auto-version"
   },
   "dependencies": {
-    "@types/prettier": "*"
+    "@types/prettier": "*",
+    "prettier-plugin-jsdoc": "*",
+    "prettier-plugin-organize-imports": "*",
+    "prettier-plugin-packagejson": "*",
+    "typescript": "*"
   },
   "devDependencies": {
-    "npm-auto-version": "^1.0.0"
+    "npm-auto-version": "^1.0.0",
+    "prettier": "^2.8.3"
   }
 }
