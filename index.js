@@ -16,10 +16,11 @@ const defaultConfig = {
   trailingComma: 'none',
   useTabs: false,
   vueIndentScriptAndStyle: false,
+  tsdoc: true,
   plugins: [
-    require.resolve('prettier-plugin-packagejson'),
-    require.resolve('prettier-plugin-jsdoc'),
-    require.resolve('prettier-plugin-organize-imports')
+    'prettier-plugin-organize-imports',
+    'prettier-plugin-jsdoc',
+    'prettier-plugin-packagejson',
   ]
 };
 
