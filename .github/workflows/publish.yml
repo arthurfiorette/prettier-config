@@ -14,27 +14,25 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
-          persist-credentials: false
-          fetch-depth: 0
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
 
       - name: Setup node and restore cached dependencies
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          registry-url: 'https://registry.npmjs.org/'
-          node-version: '16'
-          cache: 'npm'
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install packages
+        run: pnpm install --frozen-lockfile
 
       - name: Prepare git and update version
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          npm run auto-version
+          pnpm run auto-version
           git commit -m "tags: updated tags" -a
 
       - name: Publish to NPM
