@@ -24,5 +24,6 @@
   "devDependencies": {
     "npm-auto-version": "^1.0.0",
     "prettier": "^3.0.3"
-  }
+  },
+  "packageManager": "pnpm@8.8.0"
 }
