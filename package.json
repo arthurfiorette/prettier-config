@@ -4,12 +4,15 @@
   "description": "My personal prettier config",
   "homepage": "https://github.com/arthurfiorette/prettier-config#readme",
   "bugs": "https://github.com/arthurfiorette/prettier-config/issues",
-  "repository": "https://github.com/arthurfiorette/prettier-config.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurfiorette/prettier-config.git"
+  },
   "license": "MIT",
   "author": "Arthur Fiorette <me@arthur.place>",
   "main": "index.js",
   "bin": {
-    "setup-aff-prettier": "./bin.js"
+    "setup-aff-prettier": "bin.js"
   },
   "scripts": {
     "auto-version": "npm-auto-version"
