@@ -6,7 +6,7 @@
   "bugs": "https://github.com/arthurfiorette/prettier-config/issues",
   "repository": "https://github.com/arthurfiorette/prettier-config.git",
   "license": "MIT",
-  "author": "Hazork",
+  "author": "Arthur Fiorette <me@arthur.place>",
   "main": "index.js",
   "bin": {
     "setup-aff-prettier": "./bin.js"
@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "npm-auto-version": "^1.0.0",
-    "prettier": "^2.8.3"
+    "prettier": "^3.0.3"
   }
 }
