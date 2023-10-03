@@ -20,7 +20,7 @@ const defaultConfig = {
   plugins: [
     'prettier-plugin-organize-imports',
     'prettier-plugin-jsdoc',
-    'prettier-plugin-packagejson',
+    'prettier-plugin-packagejson'
   ]
 };
 
@@ -29,7 +29,6 @@ const defaultConfig = {
  *
  * @param {Partial<import('prettier').Options>} override
  * @returns {import('prettier').Options}
- *
  * @see {defaultConfig}
  */
 module.exports = function config(override = {}) {
