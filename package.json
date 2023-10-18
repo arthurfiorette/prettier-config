@@ -18,16 +18,16 @@
     "auto-version": "npm-auto-version"
   },
   "dependencies": {
-    "prettier-plugin-jsdoc": "*",
-    "prettier-plugin-organize-imports": "*",
-    "prettier-plugin-packagejson": "*"
+    "prettier-plugin-jsdoc": "^1.1.1",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.6"
   },
   "devDependencies": {
     "npm-auto-version": "^1.0.0",
     "prettier": "^3.0.3"
   },
   "peerDependencies": {
-    "prettier": ">=3.0.0"
+    "prettier": "^3.0.3"
   },
   "packageManager": "pnpm@8.8.0"
 }
