@@ -27,7 +27,7 @@ const defaultConfig = {
 /**
  * Returns the prettier config with the given overridden options.
  *
- * @param {Partial<import('prettier').Options>} override
+ * @param {Partial<import('prettier').Options>} [override[
  * @returns {import('prettier').Options}
  * @see {defaultConfig}
  */
